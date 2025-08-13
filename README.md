@@ -1,20 +1,18 @@
 # Modélisation des Résultats d'Arsenal (notebooks_min)
 
-Ce dossier contient un notebook autonome pour charger les données scrappées, préparer un dataset, entraîner Random Forest et XGBoost, et produire des visualisations et métriques utiles pour un portfolio data science.
+Ce dossier contient un notebook autonome pour charger les données scrappées, préparer un dataset, entraîner Random Forest et XGBoost, et produire des visualisations et métriques utiles.
 
 ## Contenu
 - `Arsenal_Predictions_Minimal.ipynb` : notebook principal (code + explications + visualisations)
 - `Arsenal_Predictions_Minimal_executed.ipynb` : version exécutée avec sorties intégrées (lecture immédiate sur GitHub)
-- `data/` : CSV utilisés par le notebook (copie des scrapes)
+- `data/` : CSV utilisés par le notebook, scrappés de FBREF et Understat.
 
 ## Données
 Placez trois fichiers CSV dans `notebooks_min/data/` (déjà fournis si vous avez copié depuis `data/raw/`) :
 - `understat_arsenal_matches.csv`
 - `fbref_arsenal_match_stats.csv`
 - `fbref_arsenal_team_stats.csv`
-
-Astuce: si le repo doit rester léger, gardez un échantillon (`sample_*.csv`) et documentez le chemin pour regénérer les données complètes.
-
+  
 ## Installation
 ```bash
 python -m venv .venv
